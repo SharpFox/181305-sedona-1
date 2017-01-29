@@ -1,0 +1,23 @@
+body {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+}
+
+h1{
+  font-size: 21px;
+}
+
+h2 {
+  font-size: 21px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  color: white;
+}
