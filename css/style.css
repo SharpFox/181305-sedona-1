@@ -8,16 +8,11 @@ body {
   font-family: "PT Sans Bold", "Arial", sans-serif;
 }
 
-h1{
+.sedona-statement h1{
   font-size: 21px;
 }
 
-h2 {
+.reason-first-description-first h2 {
   font-size: 21px;
-  color: white;
-}
-
-p {
-  font-size: 14px;
   color: white;
 }
