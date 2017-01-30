@@ -1,0 +1,18 @@
+body {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+}
+
+.sedona-statement h1{
+  font-size: 21px;
+}
+
+.reason-first-description-first h2 {
+  font-size: 21px;
+  color: white;
+}
