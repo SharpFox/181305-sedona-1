@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigation">
         <ul>
           <li>
@@ -27,7 +27,7 @@
         <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип Седоны"></a>
       </div>
     </header>
-    <main class="primary-main">
+    <main class="primary-main container">
       <form action="https://echo.htmlacademy.ru" class="selection-options">
         <fieldset class="infrastructure">
           <legend class="infrastructure-header">Инфраструктура:</legend>
@@ -63,7 +63,7 @@
           <button class="btn-transparent" type="submit">Показать</button>
         </fieldset>
       </form>
-      <section class="search-options">
+      <section class="search-options clearfix">
         <h2>Найдено:<output class="search-options-number">3</output></h2>
         <h3>Сортировка:</h3>
         <ul>
@@ -80,8 +80,8 @@
         <a class="search-options-sorting-up" href="#"></a>
         <a class="search-options-sorting-down" href="#"></a>
       </section>
-      <article class="first-option">
-        <div class="first-option-descritpion">
+      <article class="first-option clearfix">
+        <div class="option-descritpion">
           <img src="img/amara_resort_and_spa.jpg" width="135" height="90">
           <h2 class="hotel-name"><a href="#">Amarata Resort & Spa</a></h2>
           <span class="type-housing">Гостиница</span>
@@ -89,7 +89,7 @@
           <a href="#">Подробнее</a>
           <a href="#">Забронировать</a>
         </div>
-        <div class="first-option-rank">
+        <div class="option-rank">
           <span class="star-first"></span>
           <span class="star-second"></span>
           <span class="star-third"></span>
@@ -97,23 +97,29 @@
           <span class="rank">Рейтинг:8,5</span>
         </div>
       </article>
-      <article class="second-option">
-        <div class="second-option-description">
-          <img src="img/desert_quaill_inn.jpg" width="135" height="90">
-          <h2 class="hotel-name"><a href="#">Desert Quail Inn</a></h2>
-          <span class="type-housing">Мотель</span>
-          <span class="amount">от 2000 р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+      <article class="second-option clearfix">
+        <div class="option-description">
+          <div class="1">
+            <img src="img/desert_quaill_inn.jpg" width="135" height="90">
+            <h2 class="hotel-name"><a href="#">Desert Quail Inn</a></h2>
+          </div>
+          <div class="2">
+            <span class="type-housing">Мотель</span>
+            <span class="amount">от 2000 р.</span>
+          </div>
+          <div class="3">
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+          </div>
         </div>
-        <div class="second-option-rank">
+        <div class="option-rank">
           <span class="star-first"></span>
           <span class="star-second"></span>
           <span class="rank">Рейтинг:8,9</span>
         </div>
       </article>
-      <article class="third-option">
-        <div class="third-option-description">
+      <article class="third-option clearfix">
+        <div class="option-description">
           <img src="img/villias_and_poco_diablo.jpg" width="135" height="90">
           <h2 class="hotel-name"><a href="#">Villas At Poco Diablo</a></h2>
           <span class="type-housing"><a href="#">Апартаменты</span>
@@ -121,7 +127,7 @@
           <a href="#">Подробнее</a>
           <a href="#">Забронировать</a>
         </div>
-        <div class="third-option-rank">
+        <div class="option-rank">
           <span class="star-first"></span>
           <span class="star-second"></span>
           <span class="star-third"></span>
@@ -129,7 +135,7 @@
         </div>
       </article>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="hash-tag">
         <span class="hash-tag-text">#VisitSedona</span>
       </div>

@@ -16,3 +16,278 @@ body {
   font-size: 21px;
   color: white;
 }
+
+/*НАСТРОЙКИ*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+  width: 768px;
+  margin: 0 auto;
+}
+
+.main-header{
+  min-height: 29px;
+}
+
+.primary-main{
+  min-height: 2586px;
+}
+
+.main-footer{
+  min-height: 120px;
+}
+
+/*НАВАИГАЦИОННОЕ МЕНЮ*/
+
+.main-navigation li{
+  display: inline-block;
+  text-align: center;
+}
+
+.main-navigation li:first-child {
+  width: 106px;
+  margin-left: auto;
+}
+
+.main-navigation li:nth-child(2) {
+  width: 138px;
+  margin-left: 20px;
+}
+
+.main-navigation li:nth-child(3) {
+  width: 130px;
+  margin-left: 142px;
+}
+
+.main-navigation li:last-child {
+  width: 119px;
+  margin-left: 34px;
+  margin-right: 26px;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 384px;
+  left: 384px;
+}
+
+/*СТРАНИЦА-ВИЗИТКА*/
+
+.sedona-landscape {
+  margin-bottom: 48px;
+}
+
+.sedona-statement h1 + .sedona-statement p {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sedona-statement h1 {
+  min-height: 68px;
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sedona-statement p {
+  min-height: 32px;
+  width: 768px;
+  margin-bottom: 46px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reason-first-description-first {
+  float: left;
+  min-height: 256px;
+  width: 256px;
+}
+
+.reason-first-picture {
+  float: right;
+  min-height: 256px;
+  width: 512px;
+}
+
+.reason-first-description-second {
+  float: left;
+  min-height: 319px;
+  width: 256px;
+}
+
+.reason-first-description-third {
+  float: left;
+  min-height: 319px;
+  width: 256px;
+}
+
+.reason-first-description-fourth {
+  float: right;
+  min-height: 319px;
+  width: 256px;
+}
+
+.reason-second-picture-second {
+  float: left;
+  width: 512px;
+}
+
+.reason-second-description-second {
+  float: right;
+  width: 256px;
+}
+
+.reason-third-description-third{
+  float: left;
+  min-height: 256px;
+  width: 256px;
+  margin-bottom: 33px;
+}
+
+.reason-fourth-description-fourth {
+  float: left;
+  min-height: 256px;
+  width: 256px;
+  margin-bottom: 33px;
+}
+
+.reason-fifth-description-fifth {
+  float: right;
+  min-height: 256px;
+  width: 256px;
+  margin-bottom: 33px;
+}
+
+.feedback-info h1 + p {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.feedback-info h1 {
+  min-height: 43px;
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback-info p {
+  min-height: 56px;
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.found-hotel-in-sedona  +
+.date-input-container   +
+.date-output-container  +
+.adults-container       +
+.child-container        +
+.found{
+  display: inline-block;
+}
+
+/*Подвал*/
+
+.hash-tag {
+  float: left;
+  width: 158px;
+  margin-left: 50px;
+}
+
+.social {
+  float: left;
+  width: 150px;
+  margin-left: 102px;
+}
+
+.copyright {
+  float: right;
+  width: 215px;
+  margin-left: 74px;
+  margin-right: 21px;
+}
+
+/* ВЫБОРА ОТЕЛЯ*/
+
+.infrastructure {
+  float: left;
+  width: 141px;
+  min-height: 157px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.type-housing {
+  float: left;
+  width: 138px;
+  min-height: 157px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.filter-range {
+  float: right;
+  width: 250px;
+  min-height: 157px;
+  margin-top: 20px;
+  margin-right: 38px;
+}
+
+.search-options h2 {
+  float: left;
+  width: 96px;
+  min-height: 42px;
+  margin-top: 55px;
+  margin-left: 36px;
+}
+
+.search-options h3 {
+  float: left;
+  width: 177px;
+  min-height: 42px;
+  margin-top: 55px;
+  margin-left: 36px;
+}
+
+.search-options ul {
+  float: left;
+  width: 258px;
+  min-height: 42px;
+  margin-top: 55px;
+  margin-left: 0px;
+}
+
+.search-options li {
+  display: inline-block;
+  text-align: center;
+}
+
+/*.option-descritpion {
+  float: left;
+  width: 512px;
+}*/
+
+.option-descritpion .1{
+  float: left;
+}
+
+/*.option-descritpion .2{
+  float: left;
+}
+
+.option-descritpion .3{
+  float: left;
+}*/
+
+/*.option-rank {
+  float: right;
+  width: 199px;
+}*/
