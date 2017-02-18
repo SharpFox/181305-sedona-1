@@ -1,11 +1,25 @@
 body {
+  min-width: 960px;
+
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   color: black;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+h1, h2, h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+p {
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 /*НАСТРОЙКИ*/
@@ -31,43 +45,35 @@ body {
 
 .main-navigation li{
   display: inline-block;
-  padding-top: 6px;
-  padding-bottom: 16px;
   vertical-align: top;
 }
 
 .main-navigation a {
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 16px;
   color: black;
   text-decoration: none;
 }
 
 .main-navigation a:hover {
-  background: #81b3d2;
+  color: #81b3d2;
 }
 
 .main-navigation .active:hover {
   background: none;
 }
 
-.main-navigation li:first-child {
-  width: 113px;
-  padding-left: 26px;
+.main-navigation li:first-child{
+  margin-right: 57px;
 }
 
 .main-navigation li:nth-child(2) {
-  width: 118px;
-  padding-left: 41px;
+  margin-right: 177px;
 }
 
 .main-navigation li:nth-child(3) {
-  width: 109px;
-  padding-left: 161px;
-}
-
-.main-navigation li:last-child {
-  width: 99px;
-  padding-left: 56px;
-  padding-right: 18px;
+    margin-right: 75px;
 }
 
 .logo {
@@ -75,56 +81,108 @@ body {
   width: 138px;
   height: 70px;
   top: 0;
-  padding-left: 315px;
-  padding-right: 315px;
+  margin-left: 315px;
 }
 
 /*СТРАНИЦА-ВИЗИТКА*/
 
+.sedona-landscape{
+  height: 512px;
+  background-image: url("../img/background_sedona.jpg");
+  background-repeat: no-repeat;
+}
+
+.sedona-landscape img {
+  margin-top: 76px;
+  margin-left: 1px;
+
+}
+.sedona-landscape-palling {
+  height: 514px;
+  background-image: url("../img/paling.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
 .sedona-statement h1 {
-  padding-top: 35px;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 21px;
+  line-height: 26px;
+  padding-top: 41px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .sedona-statement p {
-  padding-top: 14px;
-  padding-bottom: 35px;
-  font-weight: normal;
+  padding-top: 18px;
+  padding-bottom: 39px;
+}
+
+.reason-first-description-first-background {
+  float: left;
+  width: 256px;
+  height: 256px;
+  background-color: #81b3d2;
 }
 
 .reason-first-description-first {
-  float: left;
-  width: 256px;
   color: white;
-  padding-top: 25px;
-  background-color: #81b3d2;
-  padding-bottom: 12px;
+  margin-top: 46px;
+  margin-bottom: 12px;
 }
 
 .reason-first-description-first h2{
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.reason-first-description-first span {
+  position: relative;
+  margin-top: 23px;
+}
+
+.reason-first-description-first span::before {
+  content:  "-";
+  position: absolute;
+  left: -10px;
+}
+
+.reason-first-description-first span::after {
+  content:  "-";
+  position: absolute;
+  right: -10px;
 }
 
 .reason-first-description-first p{
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.reason-first-description-first span::before,
-.reason-first-description-first span::after{
-  content:  "-";
+  display: block;
+  margin-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .reason-first-picture {
   float: right;
 }
 
-.reason-first-container-second {
-  padding-top: 135px;
-  padding-bottom: 36px;
+.reason-first {
+  margin-bottom: 47px;
+}
+
+.reason-first-container-second h3,
+.reason-first-container-third h3,
+.reason-first-container-fourth h3 {
+  margin-top: 152px;
+}
+
+.reason-first-container-second p,
+.reason-first-container-third p,
+.reason-first-container-fourth p {
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.reason-first-description-fourth p {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .reason-first-description-second {
@@ -132,16 +190,16 @@ body {
   width: 256px;
 }
 
-.reason-first-description-second::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  background-image:url("img/eating.png");
+.picture-housing {
+  position: relative;
 }
 
-.reason-first-description-second p {
-  padding-left: 40px;
-  padding-right: 40px;
+.picture-housing::after {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  background-image: url("../img/house.png");
+  background-repeat: no-repeat;
 }
 
 .reason-first-description-third {
@@ -149,101 +207,246 @@ body {
   width: 256px;
 }
 
-.reason-first-description-third p {
-  padding-left: 35px;
-  padding-right: 35px;
-}
-
 .reason-first-description-fourth {
   float: right;
   width: 256px;
 }
 
-.reason-first-description-fourth p {
-  padding-left: 35px;
-  padding-right: 35px;
-}
-
 .reason-second-picture-second {
   float: left;
   width: 512px;
+  height: 256px;
+}
+
+.reason-second-description-second-background {
+  float: right;
+  width: 256px;
+  height: 256px;
+  background-color: #81b3d2;
 }
 
 .reason-second-description-second {
-  float: right;
-  width: 256px;
+  color: white;
+  margin-top: 46px;
+  margin-bottom: 12px;
+}
+
+.reason-second-description-second h2{
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+.reason-second-description-second span {
+  position: relative;
+  margin-top: 23px;
+}
+
+.reason-second-description-second span::before {
+  content:  "-";
+  position: absolute;
+  left: -10px;
+}
+
+.reason-second-description-second span::after {
+  content:  "-";
+  position: absolute;
+  right: -10px;
+}
+
+.reason-second-description-second p{
+  display: block;
+  margin-top: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.reason-third-fourth-fifth-container{
+  height: 256px;
+  background-color: #eeeeee;
 }
 
 .reason-third-description-third{
   float: left;
-  min-height: 256px;
-  width: 256px;
-  margin-bottom: 33px;
 }
 
 .reason-fourth-description-fourth {
   float: left;
-  min-height: 256px;
-  width: 256px;
-  margin-bottom: 33px;
 }
 
 .reason-fifth-description-fifth {
   float: right;
-  min-height: 256px;
+}
+
+.reason-third-description-third,
+.reason-fourth-description-fourth,
+.reason-fifth-description-fifth  {
   width: 256px;
+  margin-top: 28px;
   margin-bottom: 33px;
 }
 
-.feedback-info h1 + p {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
+.reason-third-description-third h2,
+.reason-fourth-description-fourth h2,
+.reason-fifth-description-fifth h2 {
+  padding-left: 52px;
+  padding-right: 52px;
 }
 
-.feedback-info h1 {
-  min-height: 43px;
-  width: 768px;
-  margin-left: auto;
-  margin-right: auto;
+.reason-third-description-third span,
+.reason-fourth-description-fourth span,
+.reason-fifth-description-fifth span {
+  display: block;
+  margin-top: 23px;
+}
+
+.reason-third-description-third p,
+.reason-fourth-description-fourth p,
+.reason-fifth-description-fifth p {
+  display: block;
+  margin-top: 20px;
+}
+
+.reason-third-description-third p {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.reason-third-description-third span,
+.reason-fourth-description-fourth span,
+.reason-fifth-description-fifth span {
+  position: relative;
+}
+
+.reason-third-description-third span::before,
+.reason-fourth-description-fourth span::before,
+.reason-fifth-description-fifth span::before {
+  content:  "-";
+  position: absolute;
+  left: 106px;
+}
+
+.reason-third-description-third span::after,
+.reason-fourth-description-fourth span::after,
+.reason-fifth-description-fifth span::after {
+  content:  "-";
+  position: absolute;
+  right: 106px;
+}
+
+.reason-fourth-description-fourth p {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.reason-fifth-description-fifth p {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.feedback-info h2 {
+  font-size: 30px;
+  line-height: 26px;
+  margin-top: 55px;
+  margin-bottom: 30px;
 }
 
 .feedback-info p {
-  min-height: 56px;
-  width: 768px;
+  line-height: 24px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.found-hotel-in-sedona-form {
+  width: 568px;
+  height: 481px;
+  margin-top: 46px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.found-hotel-in-sedona  +
-.date-input-container   +
-.date-output-container  +
-.adults-container       +
-.child-container        +
-.found{
+.found-hotel-in-sedona {
+  width: 568px;
+  height: 86px;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #766357;
+}
+
+.block-date-input,
+.block-date-output {
+  margin-left: 20px;
+}
+
+.block-date-input {
+  margin-top: 55px;
+}
+
+.block-date-output {
+  margin-top: 29px;
+}
+
+.block-date-input input[type="text"],
+.block-date-output input[type="text"] {
+  height: 38px;
+  width: 346px;
+  box-sizing: border-box;
+}
+
+.block-short-first,
+.block-short-second {
   display: inline-block;
+  margin-top: 29px;
+  vertical-align: top;
 }
 
-/*Подвал*/
-
-.hash-tag {
-  float: left;
-  width: 158px;
-  margin-left: 50px;
+.block-short-first {
+  margin-left:100px;
 }
 
-.social {
-  float: left;
-  width: 150px;
-  margin-left: 102px;
+.block-short-first input[type="text"],
+.block-short-second input[type="text"] {
+  height: 38px;
+  width: 38px;
+  box-sizing: border-box;
+  background: #f2f2f2;
 }
 
-.copyright {
-  float: right;
-  width: 215px;
-  margin-left: 74px;
-  margin-right: 21px;
+.quantity-minus,
+.quantity-plus {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #f2f2f2;
 }
+
+.block-search-variants .found {
+  display: block;
+  width: 458px;
+  height: 58px;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: #81b3d2;
+  margin-top: 53px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*.state-map {
+  position: relative;
+}
+
+.state-map img {
+  position: absolute;
+  top: -600px;
+}*/
+
 
 /* ВЫБОРА ОТЕЛЯ*/
 
@@ -254,7 +457,7 @@ body {
   background-position: center;
   background-position: top;
 }
-
+/*
 .infrastructure {
   float: left;
   width: 141px;
@@ -301,31 +504,68 @@ body {
   min-height: 42px;
   margin-top: 55px;
   margin-left: 0px;
-}
-
-.search-options li {
-  display: inline-block;
-  text-align: center;
-}
-
-/*.option-descritpion {
-  float: left;
-  width: 512px;
 }*/
 
-.option-descritpion .1{
+/*Подвал*/
+
+.hash-tag {
   float: left;
+  margin-left: 55px;
+  margin-top: 30px;
 }
 
-/*.option-descritpion .2{
+.social {
   float: left;
+  margin-left: 125px;
+  margin-top: 30px;
 }
 
-.option-descritpion .3{
-  float: left;
-}*/
-
-/*.option-rank {
+.copyright {
   float: right;
-  width: 199px;
-}*/
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hash-tag .text {
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.copyright .text {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 6px;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    margin-right: 3px;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+    background-color: #81b3d2;
+}
+
+.social-tw {
+    background-image: url("../img/twitter.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-fb {
+    background-image: url("../img/facebook.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-utube {
+    background-image: url("../img/you_tube.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
