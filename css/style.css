@@ -1243,12 +1243,14 @@ p {
   background-color: #669ec0;
 }
 
-.social-btn:active {
-  background-color: #5496bd;
-}
-
 .social-tw {
     background-image: url("../img/twitter.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-tw:active {
+    background-image: url("../img/twitter_active.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -1256,11 +1258,23 @@ p {
 .social-fb {
     background-image: url("../img/facebook.png");
     background-repeat: no-repeat;
+    background-position: 50% 45%;
+}
+
+.social-fb:active {
+    background-image: url("../img/facebook_active.png");
+    background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
 .social-utube {
     background-image: url("../img/you_tube.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-utube:active {
+    background-image: url("../img/you_tube_active.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
