@@ -9,7 +9,7 @@ body {
   color: black;
   font-family: "PT Sans", "Arial", sans-serif;
 
-  background-color: gray;
+  background-color: #f2f2f2;
 }
 
 h1, h2, h3 {
@@ -469,10 +469,10 @@ p {
   background-color: #ebebeb;
 }
 
-.block-search-variants .date-input:active,
-.block-search-variants .date-output:active,
-.block-search-variants .adults:active,
-.block-search-variants .child:active {
+.block-search-variants .date-input:focus,
+.block-search-variants .date-output:focus,
+.block-search-variants .adults:focus,
+.block-search-variants .child:focus {
   background-color: #ffffff;
 }
 
@@ -500,10 +500,8 @@ p {
   box-sizing: border-box;
   text-transform: uppercase;
   padding-left: 16px;
-  /*color: #666666;*/
   border: none;
   background-color: #f2f2f2;
-  color: #000;
 }
 
 .block-date-output input[type="text"] {
@@ -1070,6 +1068,7 @@ p {
   width: 113px;
   padding: 0;
   margin-right: 2px;
+  margin-top: -3px;
 }
 
 .hotel-info .type-housing {
