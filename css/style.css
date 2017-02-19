@@ -1,5 +1,5 @@
 body {
-  min-width: 960px;
+  min-width: 768px;
 
   font-size: 14px;
   line-height: 26px;
@@ -8,6 +8,8 @@ body {
   text-align: center;
   color: black;
   font-family: "PT Sans", "Arial", sans-serif;
+
+  background-color: #f2f2f2;
 }
 
 h1, h2, h3 {
@@ -33,6 +35,7 @@ p {
 .container {
   width: 768px;
   margin: 0 auto;
+  background-color: #ffffff;
   box-shadow: 0 15px 25px lightgrey;
 }
 
@@ -59,6 +62,14 @@ p {
 
 .main-navigation a:hover {
   color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: #cacaca;
+}
+
+.main-navigation .active a:active {
+  color: #dbd8d5;
 }
 
 .main-navigation .active:hover {
@@ -187,7 +198,7 @@ p {
 .reason-first-container-second h3,
 .reason-first-container-third h3,
 .reason-first-container-fourth h3 {
-  margin-top: 152px;
+  margin-top: 150px;
 }
 
 .reason-first-container-second p,
@@ -277,8 +288,8 @@ p {
 }
 
 .reason-second-description-second h2{
-  padding-left: 52px;
-  padding-right: 52px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-bottom: 22px;
 }
 
@@ -420,6 +431,7 @@ p {
 }
 
 .found-hotel-in-sedona-form {
+  position: relative;
   width: 568px;
   margin-top: 46px;
   margin-left: auto;
@@ -428,9 +440,9 @@ p {
 
 .found-hotel-in-sedona {
   width: 568px;
-  height: 88px;
-  font-size: 18px;
-  line-height: 25px;
+  height: 86px;
+  font-size: 21px;
+  line-height: 26px;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -440,59 +452,172 @@ p {
 
 .block-search-variants {
   position: absolute;
-  width: 568px;
+  width: 459px;
   height: 395px;
-  top: 2169px;
+  padding-left: 54px;
+  padding-right: 55px;
+  left: 0px;
+  top: 86px;
   background-color: white;
   box-shadow: 0 7px 15px 0 rgba(0,0,0,.15);
 }
 
-.block-date-input,
-.block-date-output {
-  margin-left: 20px;
+.block-search-variants .date-input:hover,
+.block-search-variants .date-output:hover,
+.block-search-variants .adults:hover,
+.block-search-variants .child:hover {
+  background-color: #ebebeb;
+}
+
+.block-search-variants .date-input:focus,
+.block-search-variants .date-output:focus,
+.block-search-variants .adults:focus,
+.block-search-variants .child:focus {
+  background-color: #ffffff;
 }
 
 .block-date-input {
+  position: relative;
   margin-top: 55px;
 }
 
 .block-date-output {
+  position: relative;
   margin-top: 29px;
+}
+
+.block-date-input label,
+.block-date-output label {
+  padding-right: 16px;
 }
 
 .block-date-input input[type="text"],
 .block-date-output input[type="text"] {
   height: 38px;
   width: 346px;
+  font-size: 14px;
+  line-height: 26px;
   box-sizing: border-box;
+  text-transform: uppercase;
+  padding-left: 16px;
+  border: none;
+  background-color: #f2f2f2;
 }
 
-.block-short-first,
-.block-short-second {
+.block-date-output input[type="text"] {
+  padding-left: 13px;
+}
+
+.calendar {
+  position: absolute;
+  right: 9px;
+  top: 8px;
+  font-size: 0;
+  width: 21px;
+  height: 22px;
+  background-image: url("../img/calendar_gray.png");
+  background-repeat: no-repeat;
+}
+
+.calendar:hover {
+  background-image: url("../img/calendar_black.png");
+  background-repeat: no-repeat;
+}
+
+.calendar:active {
+  background-image: url("../img/calendar_blue.png");
+  background-repeat: no-repeat;
+}
+
+.block-adults,
+.block-child {
+  position: relative;
   display: inline-block;
-  margin-top: 29px;
-  vertical-align: top;
+  margin-top: 30px;
 }
 
-.block-short-first {
-  margin-left:100px;
+.block-child {
+  margin-right: 35px;
 }
 
-.block-short-first input[type="text"],
-.block-short-second input[type="text"] {
-  height: 38px;
+.adults label,
+.child label {
+    display: inline-block;
+    margin-bottom: 39px;
+    margin-top: 7px;
+    font-weight: 700;
+}
+
+.minus {
+  position: absolute;
+  left: 112px;
   width: 38px;
-  box-sizing: border-box;
-  background: #f2f2f2;
+  height: 38px;
+  background-color: #f2f2f2;
+  background-image: url("../img/mines_gray.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.quantity-minus,
-.quantity-plus {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
+.minus:hover {
+  background-image: url("../img/minus_black.png");
+  background-repeat: no-repeat;
+}
+
+.minus:active {
+  background-image: url("../img/minus_blue.png");
+  background-repeat: no-repeat;
+}
+
+.minus-second {
+  left: 64px;
+  top: 0;
+}
+
+.adults, .child {
+  text-align: center;
+  width: 38px;
+  height: 36px;
+  margin-left: 73px;
+  margin-right: 85px;
   background: #f2f2f2;
+  border: 0;
+  margin-bottom: 55px;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000;
+}
+
+.child {
+    margin-right: 0;
+    margin-left: 60px;
+}
+
+.plus {
+    position: absolute;
+    right: 49px;
+    top: 0;
+    background-color: #f2f2f2;
+    background-image: url("../img/plus_gray.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 38px;
+    height: 38px;
+}
+
+.plus:hover {
+  background-image: url("../img/plus_black.png");
+  background-repeat: no-repeat;
+}
+
+.plus:active {
+  background-image: url("../img/plus_blue.png");
+  background-repeat: no-repeat;
+}
+
+.plus-second {
+  right: -38px;
 }
 
 .block-search-variants .found {
@@ -505,12 +630,19 @@ p {
   font-weight: bold;
   color: white;
   background-color: #81b3d2;
-  margin-top: 54px;
   margin-left: auto;
   margin-right: auto;
   border: none;
 }
 
+.block-search-variants .found:hover {
+  background-color: #669ec0;
+}
+
+.block-search-variants .found:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
 
 /* ВЫБОРА ОТЕЛЯ*/
 
@@ -538,7 +670,7 @@ p {
   margin-left: 45px;
 }
 
-.type-housing {
+.filter .type-housing {
   float: left;
   width: 200px;
   vertical-align: middle;
@@ -668,7 +800,7 @@ p {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 32px;
+  line-height: 28px;
   vertical-align: top;
 
   cursor: pointer;
@@ -763,6 +895,13 @@ p {
   background: #ffffff;
 }
 
+/* шапка поиска*/
+
+.search-options-sorting {
+  min-height: 86px;
+  border-bottom: 1px solid #e5e5e5
+}
+
 .search-options-sorting h2 {
   float: left;
   vertical-align: top;
@@ -776,6 +915,8 @@ p {
 
   margin-top: 36px;
   margin-left: 49px;
+
+  font-weight: normal;
 }
 
 .search-options-sorting ul {
@@ -783,6 +924,8 @@ p {
   vertical-align: middle;
 
   margin-top: 31px;
+
+  font-weight: normal;
 }
 
 .search-options-sorting li {
@@ -797,7 +940,7 @@ p {
 }
 
 .search-options-sorting li a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .search-options-sorting .cost {
@@ -815,25 +958,225 @@ text-decoration: none;
   border: none;
 }
 
+.search-options-sorting .type:hover,
+.search-options-sorting .rank:hover {
+  color: #81b3d2;
+}
+
+.search-options-sorting .type:active,
+.search-options-sorting .rank:active {
+  color: #000000;
+  border: none;
+}
+
 .search-options-sorting .up-or-down {
   float: right;
-  vertical-align: middle;
+  vertical-align: top;
+}
+
+.up-or-down a {
+  display: inline-block;
+  vertical-align: top;
+  width: 11px;
+  height: 10px;
+  margin-left: 9px;
+  margin-top: 40px;
+}
+
+.up-or-down .up {
+  background-image: url("../img/arrow_up_gray.png");
+  background-repeat: no-repeat;
+}
+
+.up-or-down .up:hover {
+  background-image: url("../img/arrow_up_black.png");
+  background-repeat: no-repeat;
+}
+
+.up-or-down .up:active {
+  background-image: url("../img/arrow_up_blue.png");
+  background-repeat: no-repeat;
+}
+
+.up-or-down .down {
+  margin-top: 39px;
+  margin-right: 45px;
+  background-image: url("../img/arrow_down_blue.png");
+  background-repeat: no-repeat;
+}
+
+.up-or-down .down:hover {
+  background-image: url("../img/arrow_down_black.png");
+  background-repeat: no-repeat;
+}
+
+.up-or-down .down:active {
+  background-image: url("../img/arrow_down_blue.png");
+  background-repeat: no-repeat;
+}
+
+/* отели */
+
+.first-option,
+.second-option,
+.third-option {
+  min-height: 150px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-picture {
+  float: left;
+  margin-top: 31px;
+  margin-right: 31px;
+  margin-left: 46px;
+}
+
+.hotel-description {
+  float: left;
+  margin-top: 26px;
+  margin-right: 30px;
+}
+
+.hotel-rank {
+  float: right;
+  margin-top: 25px;
+  margin-right: 30px;
+}
+
+.hotel-description h2 {
+  text-align: left;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.hotel-description a {
+  text-decoration: none;
+  line-height: 21px;
+  color: black;
+}
+
+.hotel-description a:hover {
+  color: #81b3d2;
+}
+
+.hotel-description a:active {
+  color: #cacaca;
+}
+
+.hotel-info,
+.hotel-booking {
+  float: left;
+  text-align: left;
+  width: 113px;
+  padding: 0;
+  margin-right: 2px;
+  margin-top: -3px;
+}
+
+.hotel-info .type-housing {
+  display: inline-block;
+  font-weight: normal;
+  padding-bottom: 13px;
+}
+
+.hotel-info a {
+  background-color: #81b3d2;
+}
+
+.hotel-booking .amount {
+  display: inline-block;
+  font-weight: normal;
+  padding-top: 3px;
+  padding-bottom: 13px;
+}
+
+.hotel-booking a {
+  background-color: #766357;
+}
+
+.hotel-info a, .hotel-booking a {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
+  padding-left: 17px;
+  padding-right: 16px;
+}
+
+.hotel-rank .stars {
+  margin-top: 4px;
+  margin-right: 15px;
+}
+
+.stars span{
+  display: inline-block;
+  vertical-align: top;
+  width: 19px;
+  height: 17px;
+  margin-left: 1px;
+  background-image: url("../img/star.png");
+  background-repeat: no-repeat;
+}
+
+.stars span:first-child {
+  margin-left: 100px;
+}
+
+.hotel-rank .rank {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 39px;
+  font-weight: normal;
+  background-color: #f2f2f2;
+  padding: 1.5px 15px;
+}
+
+.first-option .rank {
+  margin-left: 65px;
+}
+
+.second-option .rank {
+  margin-left: 16px;
+}
+
+.third-option .rank {
+  margin-left: 40px;
+}
+
+.hotel-info a:hover {
+  color: white;
+  background-color: #669ec0;
+}
+
+.hotel-info a:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.hotel-booking a:hover {
+  color: white;
+  background-color: #604e43;
+}
+
+.hotel-booking a:active {
+  color: #928a85;
+  background-color: #503e33;
 }
 
 /*Подвал*/
 
-.main-footer {
-  width: 768px;
-  right: 0;
-  left: 0;
-  background-color: #fff;
+.footer-position {
   opacity: 0.9;
+  margin-top: -128px;
 }
 
 .hash-tag {
   float: left;
   margin-left: 60px;
-  margin-top: 43px;
+  margin-top: 46px;
 }
 
 .social {
@@ -846,7 +1189,7 @@ text-decoration: none;
   float: right;
   margin-top: 40px;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .hash-tag .text {
@@ -856,14 +1199,36 @@ text-decoration: none;
   font-weight: 700;
 }
 
+.copyright .text,
+.copyright .link {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .copyright .text {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 6px;
-    margin-right: 5px;
-    line-height: 26px;
-    font-size: 14px;
-    font-weight: normal;
+  line-height: 26px;
+  font-size: 14px;
+  padding-top: 6px;
+  padding-right: 5px;
+}
+
+.copyright .link {
+  width: 113px;
+  height: 39px;
+  margin-top: 1px;
+  font-size: 0;
+  background-image: url("../img/logo_htmlacadamy_black.png");
+  background-repeat: no-repeat;
+}
+
+.copyright .link:hover {
+  background-image: url("../img/logo_htmlacadamy_blue.png");
+  background-repeat: no-repeat;
+}
+
+.copyright .link:active {
+  background-image: url("../img/logo_htmlacadamy_gray.png");
+  background-repeat: no-repeat;
 }
 
 .social-btn {
@@ -877,8 +1242,18 @@ text-decoration: none;
     background-color: #81b3d2;
 }
 
+.social-btn:hover {
+  background-color: #669ec0;
+}
+
 .social-tw {
     background-image: url("../img/twitter.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-tw:active {
+    background-image: url("../img/twitter_active.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -886,11 +1261,23 @@ text-decoration: none;
 .social-fb {
     background-image: url("../img/facebook.png");
     background-repeat: no-repeat;
+    background-position: 50% 45%;
+}
+
+.social-fb:active {
+    background-image: url("../img/facebook_active.png");
+    background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
 .social-utube {
     background-image: url("../img/you_tube.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-utube:active {
+    background-image: url("../img/you_tube_active.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
