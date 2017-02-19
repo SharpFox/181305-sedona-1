@@ -522,6 +522,8 @@ p {
   color: #ffffff;
 }
 
+/* Позиционирование фильтров */
+
 .infrastructure {
   float: left;
   width: 206px;
@@ -556,6 +558,8 @@ p {
   padding: 0;
   border: none;
 }
+
+/* фильтр инфраструктуры и типа жилья*/
 
 .filter label {
   color: white;
@@ -757,6 +761,63 @@ p {
   color: #000000;
 
   background: #ffffff;
+}
+
+.search-options-sorting h2 {
+  float: left;
+  vertical-align: top;
+  margin-top: 32px;
+  margin-left: 45px;
+}
+
+.search-options-sorting h3 {
+  float: left;
+  vertical-align: top;
+
+  margin-top: 36px;
+  margin-left: 49px;
+}
+
+.search-options-sorting ul {
+  float: left;
+  vertical-align: middle;
+
+  margin-top: 31px;
+}
+
+.search-options-sorting li {
+  display: inline-block;
+  margin-right: 29px;
+}
+
+.search-options-sorting h3,
+.search-options-sorting li a {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.search-options-sorting li a {
+text-decoration: none;
+}
+
+.search-options-sorting .cost {
+  color: #81b3d2;
+}
+
+.search-options-sorting .type,
+.search-options-sorting .rank {
+  color: #cacaca;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.search-options-sorting .cost {
+  color: #81b3d2;
+  border: none;
+}
+
+.search-options-sorting .up-or-down {
+  float: right;
+  vertical-align: middle;
 }
 
 /*Подвал*/
