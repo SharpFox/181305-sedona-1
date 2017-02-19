@@ -915,6 +915,8 @@ p {
 
   margin-top: 36px;
   margin-left: 49px;
+
+  font-weight: normal;
 }
 
 .search-options-sorting ul {
@@ -922,6 +924,8 @@ p {
   vertical-align: middle;
 
   margin-top: 31px;
+
+  font-weight: normal;
 }
 
 .search-options-sorting li {
