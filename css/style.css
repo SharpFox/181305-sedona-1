@@ -33,6 +33,7 @@ p {
 .container {
   width: 768px;
   margin: 0 auto;
+  box-shadow: 0 15px 25px lightgrey;
 }
 
 /*НАВАИГАЦИОННОЕ МЕНЮ*/
@@ -50,7 +51,7 @@ p {
 
 .main-navigation a {
   display: block;
-  padding-top: 6px;
+  padding-top: 14px;
   padding-bottom: 16px;
   color: black;
   text-decoration: none;
@@ -62,6 +63,14 @@ p {
 
 .main-navigation .active:hover {
   background: none;
+}
+
+.main-navigation .active-hotels {
+  color: #766357;
+}
+
+.main-navigation .active-hotels:hover {
+  color: #604e43;
 }
 
 .main-navigation li:first-child{
@@ -137,6 +146,7 @@ p {
 
 .reason-first-description-first span {
   position: relative;
+  font-weight: normal;
 }
 
 .reason-first-description-first span::before {
@@ -274,6 +284,7 @@ p {
 
 .reason-second-description-second span {
   position: relative;
+  font-weight: normal;
 }
 
 .reason-second-description-second span::before {
@@ -358,6 +369,7 @@ p {
 .reason-fourth-description-fourth span,
 .reason-fifth-description-fifth span {
   position: relative;
+  font-weight: normal;
 }
 
 .reason-third-description-third span::before,
@@ -432,6 +444,7 @@ p {
   height: 395px;
   top: 2169px;
   background-color: white;
+  box-shadow: 0 7px 15px 0 rgba(0,0,0,.15);
 }
 
 .block-date-input,
@@ -502,73 +515,256 @@ p {
 /* ВЫБОРА ОТЕЛЯ*/
 
 .filter {
-  background-color: #000000;
-  background-image: url("img/background_sedona_blurry.jpg");
+  height: 217px;
+  background-image: url("../img/background_sedona_blurry.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-position: top;
-}
-/*
-.infrastructure {
-  float: left;
-  width: 141px;
-  min-height: 157px;
-  margin-top: 20px;
-  margin-left: 35px;
+  background-position: 0px -57px;
+  color: #ffffff;
 }
 
-.filter .type-housing {
+.infrastructure {
   float: left;
-  width: 138px;
-  min-height: 157px;
-  margin-top: 20px;
-  margin-left: 50px;
+  width: 206px;
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.infrastructure {
+  margin-left: 45px;
+}
+
+.type-housing {
+  float: left;
+  width: 200px;
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  margin-left: 35px;
+  padding: 0;
+  border: none;
 }
 
 .filter-range {
   float: right;
-  width: 250px;
-  min-height: 157px;
-  margin-top: 20px;
-  margin-right: 38px;
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  margin-right: 45px;
+  padding: 0;
+  border: none;
 }
 
-.search-options h2 {
-  float: left;
-  width: 96px;
-  min-height: 42px;
-  margin-top: 55px;
-  margin-left: 36px;
+.filter label {
+  color: white;
+  line-height: 20px;
+  font-weight: normal;
 }
 
-.search-options h3 {
-  float: left;
-  width: 177px;
-  min-height: 42px;
-  margin-top: 55px;
-  margin-left: 36px;
+.infrastructure,
+.type-housing {
+  padding-top: 3px;
 }
 
-.search-options ul {
-  float: left;
-  width: 258px;
-  min-height: 42px;
-  margin-top: 55px;
-  margin-left: 0px;
-}*/
+.infrastructure-header,
+.type-housing-header,
+.filter-range-title {
+  font-size: 16px;
+  color: white;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.filter input[type=checkbox] {
+    display: none;
+}
+
+.filter input[type=checkbox] + label {
+  display: block;
+  padding-bottom: 26px;
+  padding-left: 41px;
+  position: relative;
+  cursor: pointer;
+}
+
+.filter input[type="checkbox"] + label::before {
+   position: absolute;
+   content: "";
+   top: 50%;
+   left: 50%;
+
+   display: block;
+   top: 0;
+   left: 0;
+   width: 26px;
+   height: 22px;
+   background-position: 0px 0px;
+}
+
+.filter input[type="checkbox"]:checked + label::before,
+.filter input[type="checkbox"]:checked:hover + label::before {
+  background-image: url("../img/chekbox_checked.png");
+  background-repeat: no-repeat;
+}
+
+.filter input[type="checkbox"] + label::before,
+.filter input[type="checkbox"]:hover + label::before {
+  background-image: url("../img/chekbox_unchecked.png");
+  background-repeat: no-repeat;
+}
+
+/** фильтр цены **/
+
+.filter-range {
+  width: 225px;
+  margin-top: 10px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  padding-top: 16px;
+  padding-left: 3px;
+  padding-bottom: 11px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 32px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 32px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price {
+  width: 70px;
+  padding-left: 40px;
+}
+
+.price-controls .max-price {
+  width: 80px;
+  padding-left: 30px;
+}
+
+.price-controls input {
+  width: 40px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-left: 4px;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0px;
+}
+
+.range-toggle-max {
+  left: 70%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
 
 /*Подвал*/
 
-.main-footer-border {
-  position: absolute;
-}
-
 .main-footer {
   width: 768px;
-  min-height: 120px;
-  top: 2644px;
-  bottom: 0;
-  right: 156px;
+  right: 0;
+  left: 0;
   background-color: #fff;
   opacity: 0.9;
 }

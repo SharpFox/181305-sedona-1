@@ -5,7 +5,7 @@
     <title>Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic,cyrillic-ext">
   </head>
   <body>
     <header class="main-header container">
@@ -20,8 +20,8 @@
           <li>
             <a href="#">Карта штата</a>
           </li>
-          <li class="active">
-            <a>Гостиницы</a>
+          <li>
+            <a class="active-hotels">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -50,7 +50,7 @@
         <label for="type-housing-third-label">Апартаменты</label>
         </fieldset>
         <fieldset class="filter-range">
-          <legend class="filter-range-title">Стоимость в сутки(р):</legend>
+          <legend class="filter-range-title">Стоимость в сутки (р):</legend>
           <div class="price-controls">
             <label class="min-price">от <input type="text" name="min-price" value="0"></label>
             <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
@@ -137,7 +137,7 @@
         </div>
       </article>
     </main>
-    <footer class="main-footer main-footer-border container">
+    <footer class="main-footer container clearfix">
       <div class="hash-tag">
         <span class="text">#VisitSedona</span>
       </div>
