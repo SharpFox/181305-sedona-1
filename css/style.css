@@ -1,6 +1,5 @@
 body {
   min-width: 768px;
-
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -8,7 +7,6 @@ body {
   text-align: center;
   color: black;
   font-family: "PT Sans", "Arial", sans-serif;
-
   background-color: #f2f2f2;
 }
 
@@ -93,7 +91,7 @@ p {
 }
 
 .main-navigation li:nth-child(3) {
-    margin-right: 75px;
+  margin-right: 75px;
 }
 
 .logo {
@@ -436,7 +434,7 @@ p {
   margin-top: 46px;
   margin-left: auto;
   margin-right: auto;
-  }
+}
 
 .found-hotel-in-sedona {
   width: 568px;
@@ -542,10 +540,10 @@ p {
 
 .adults label,
 .child label {
-    display: inline-block;
-    margin-bottom: 39px;
-    margin-top: 7px;
-    font-weight: 700;
+  display: inline-block;
+  margin-bottom: 39px;
+  margin-top: 7px;
+  font-weight: 700;
 }
 
 .minus {
